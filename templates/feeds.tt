@@ -1,0 +1,5 @@
+<ul>
+[% FOREACH f IN feeds %]
+	<li><a href="[% f.blogUrl %]">[% f.author %]</a> (<a href="[% f.feedUrl %]">feed</a>)</li>
+[% END %]
+</ul>

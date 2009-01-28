@@ -1,0 +1,180 @@
+--- !!perl/hash:Config::Tiny 
+DEFAULT: 
+  face: nobody.png
+Planet: 
+  cache_directory: /tmp/planetalinux
+  country: Venezuela
+  country_tld: ve
+  date_format: "%l:%M %P"
+  days_per_page: 5
+  encoding: utf-8
+  items_per_page: 50
+  link: http://ve.planetalinux.org/
+  locale: es_MX.UTF-8
+  log_level: DEBUG
+  name: Planeta Linux Venezuela
+  new_date_format: "%d de %B de %Y"
+  new_feed_items: 10
+  output_dir: /home/planetalinux/www/ve.planetalinux.org
+  owner_email: planetalinux@googlegroups.com
+  owner_name: Planeta Linux
+  template_files: /home/planetalinux/current/proc/ve/index.html.tmpl /home/planetalinux/current/proc/rss20.xml.tmpl /home/planetalinux/current/proc/opml.xml.tmpl
+http://ailefi.net.ve/?feed=rss2&cat=2: 
+  face: ailefi.png
+  name: "Ail\xC3\xA9 Filippi"
+http://alberkman.unplug.org.ve/?feed=rss2&cat=7: 
+  face: alberkman.png
+  name: Alberto Capella
+http://an1ta.wordpress.com/tag/software-libre/feed: 
+  name: Ana Rangel
+http://arcangel.belug.org.ve/?feed=rss2&cat=7: 
+  name: "C\xC3\xA9sar Gavidia"
+http://asoajedrene.net/wordpress/?feed=rss2: 
+  name: "Wilfredo Rodr\xC3\xADguez Hern\xC3\xA1ndez"
+http://bella.unplug.org.ve/?feed=rss2: 
+  name: "Ira\xC3\xADs Mej\xC3\xADa"
+http://bigjocker.unplug.org.ve/?feed=rss2&cat=5: 
+  name: Francisco Andrades
+http://blog.0x29.com.ve/?feed=rss2&cat=6: 
+  face: apostols.png
+  name: Juan A. Moreno
+http://blog.bureado.com.ve/?feed=rss2&cat=2: 
+  face: bureado.png
+  name: "Jos\xC3\xA9 Miguel Parrella Romero"
+http://blog.g013m.com.ve/index.php?/feeds/categories/8-Planeta-Linux.rss: 
+  name: "Christian S\xC3\xA1nchez"
+http://blog.mogaal.com/?feed=rss2&cat=5: 
+  face: mogaal.png
+  name: Alejandro Garrido
+http://blog.rrodolfos.com.ve/?feed=rss2&cat=2: 
+  name: Rodolfo Sauce-Guinand
+http://blog.tecnovm64.com/category/computers/feed: 
+  name: "V\xC3\xADctor Rom\xC3\xA1n"
+http://cesar.plug.org.ve/?feed=rss2&cat=2: 
+  face: cesar.png
+  name: "C\xC3\xA9sar W. Sevilla"
+http://dvst.wordpress.com/feed/: 
+  face: dvst.png
+  name: "Javier E. P\xC3\xA9rez P."
+http://e1th0r.gulmer.org.ve/?feed=rss2: 
+  name: "H\xC3\xA9ctor Colina"
+http://edgarin.wordpress.com/tag/planeta-linux/feed: 
+  name: "Edgar Guzm\xC3\xA1n"
+http://eduardodattellis.unplug.org.ve/?cat=7&feed=rss2: 
+  face: eduardollis.png
+  name: Eduardo D'Attellis
+http://efraim.marquez-arreaza.net/?feed=rss2: 
+  name: "Efraim M\xC3\xA1rquez-Arreaza"
+http://g3ox.blogspot.com/feeds/posts/default/-/GNU-Linux-Ubuntu: 
+  face: g3ox.png
+  name: "Javier Valdiv\xC3\xA9"
+http://gerardo.com.ve/blog/cat/planet/linux/feed: 
+  face: hg.png
+  name: Gerardo Curiel
+http://ghostbar.ath.cx/?q=taxonomy/term/1/0/feed: 
+  face: ghostbar.png
+  name: "Jos\xC3\xA9 Luis Rivas"
+http://grunch.com.ve/?feed=rss2&cat=12: 
+  name: "Francisco J. Calder\xC3\xB3n S."
+http://ieac.faces.ula.ve/mapologo/?feed=rss2: 
+  face: fpalm.png
+  name: Francisco Palm
+http://jean.plug.org.ve/?feed=rss2: 
+  name: "Jean Carlos D\xC3\xA1vila"
+http://jelitox.unplug.org.ve/?feed=rss2: 
+  name: "Javier Le\xC3\xB3n"
+http://jessmat.blogspot.com/atom.xml: 
+  name: "Jes\xC3\xBAs Matamoros"
+http://jesuslobaton.blogspot.com/feeds/posts/default: 
+  name: Jesus Lobaton
+http://jhuss.com/category/software-libre/feed: 
+  name: "Jes\xC3\xBAs Jerez"
+http://julio.jhuss.com/?feed=rss2&cat=7: 
+  face: julioch.png
+  name: Julio Cesar Hernandez Garcia
+http://kakei.us/index.php/category/linux/feed: 
+  name: Michael Ho
+http://koshrf.fercusoft.com/koshrf/?feed=rss2: 
+  name: "Ricardo C. Fern\xC3\xA1ndez"
+http://kyrb2000.blogspot.com/atom.xml: 
+  name: Kenner Roa
+http://lcaballero.wordpress.com/tag/linux/feed: 
+  face: macross.png
+  name: Leonardo Caballero
+http://liramusik.gnulinuxtachira.org.ve/?feed=rss2: 
+  name: "Lilibeth Ram\xC3\xADrez"
+http://mannyto.unplug.org.ve/index.php/category/tecnicos/feed: 
+  name: "Manuel Garc\xC3\xADa"
+http://matandotigres.wordpress.com/tag/software-libre/feed/: 
+  face: jinmemirabal.png
+  name: Jinme Mirabal
+http://mmujica.wordpress.com/tag/software-libre/feed: 
+  name: "Manuel M\xC3\xBAjica"
+http://nagui1008.blogspot.com/atom.xml: 
+  name: Nerissa Aguilera
+http://octavio.unplug.org.ve/?feed=rss2&cat=3: 
+  face: octavio.png
+  name: Octavio Rossell
+http://pelox.gusl.org.ve/blog/category/pl/feed: 
+  face: pelox.png
+  name: Rafael Isturiz
+http://planetalinuxblog.blogspot.com/atom.xml: 
+  face: planeta.png
+  name: Planeta Linux
+http://rendergraf.wordpress.com/feed/: 
+  name: Xavier Araque
+http://rodrigo.unplug.org.ve/?feed=rss2&cat=7: 
+  face: rodrigo.png
+  name: Rodrigo Rodriguez
+http://roliverio.vaslibre.org.ve/?cat=17&feed=rss2: 
+  face: roliverio.png
+  name: Julio C. Ortega
+http://sicutdeux.unplug.org.ve/?feed=rss2&cat=7: 
+  name: "Axzel Mar\xC3\xADn"
+http://simon.cuclug.org.ve/?cat=2&feed=rss2: 
+  name: Simon Saman
+http://skatox.com/blog/wp-rss2.php?cat=3: 
+  face: skatox.png
+  name: "Miguel \xC3\x81ngel Useche"
+http://tatica.org/data/xml/blog.Linux.rss: 
+  face: tatica.png
+  name: "Mar\xC3\xADa Leandro"
+http://thefenix.wordpress.com/tag/linux/feed: 
+  name: "V\xC3\xADctor Villalobos"
+http://titacgs.com.ve/blog/category/planet/linux/feed/: 
+  name: "Vanessa Guti\xC3\xA9rrez"
+http://tuxico.blogspot.com/atom.xml: 
+  name: Richard Laya
+http://veronica.unplug.org.ve/?cat=13&feed=rss2: 
+  face: queenstorm.png
+  name: Veronica Lavieri
+http://walter.unplug.org.ve/?feed=rss2: 
+  name: Walter Vargas
+http://waod.com.ve/blog/?feed=rss2&cat=4: 
+  name: Williams Ortega
+http://willigulip.wordpress.com/tag/planetalinux/feed/: 
+  face: willigulip.png
+  name: William Cabrera
+http://www.eidast.com/data/xml/blog.rss: 
+  name: Alexander Moreno
+http://www.flaper87.org/category/gnulinux/feed: 
+  name: Flavio Percoco Premoli
+http://www.jesuslara.com.ve/blog/category/cultura-libre/planeta-linux/feed: 
+  face: vieja.png
+  name: "Jes\xC3\xBAs Lara"
+http://www.lacaraoscura.com/author/ard/feed/: 
+  name: "An\xC3\xADbal Rojas"
+http://www.lacaraoscura.com/author/egg/feed/: 
+  name: Edgar Gonzalez
+http://www.richzendy.org/data/xml/blog.Gnu+y+Linux.rss: 
+  face: richzendy.png
+  name: Richzendy Contreras
+http://www.softwarelibre.org.ve/gaular/category/foss/feed: 
+  name: Gregory Aular Franco
+http://www.waltervargas.org/?feed=atom: 
+  name: Walter Vargas
+http://zentraedi.unplug.org.ve/?feed=rss2&cat=3: 
+  name: "H\xC3\xA9ctor Cen"
+http://zizou.uclatux.org.ve/?feed=rss2&cat=2: 
+  face: manuel_chavez.png
+  name: "Manuel Ch\xC3\xA1vez"
