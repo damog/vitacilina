@@ -1,9 +1,12 @@
 #!/usr/bin/env perl
 
-use ExtUtils::MakeMaker;
+use inc::Module::Install;
 
-WriteMakefile(
-	NAME            => 'Vitacilina',
-	VERSION_FROM    => 'lib/Vitacilina.pm'
-);
+name 'Vitacilina';
+all_from 'lib/Vitacilina.pm';
 
+requires 'XML::Feed' => '0.41';
+no_index directory => 'examples';
+# license_from 'LICENSE';
+
+WriteAll;

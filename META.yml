@@ -1,0 +1,21 @@
+---
+abstract: '¡Ah, qué buena medicina!'
+author:
+  - 'David Moreno &lt;david@axiombox.com&gt;.'
+distribution_type: module
+generated_by: 'Module::Install version 0.78'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Vitacilina
+no_index:
+  directory:
+    - examples
+    - inc
+requires:
+  XML::Feed: 0.41
+  perl: 5.005
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.1

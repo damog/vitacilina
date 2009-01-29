@@ -5,7 +5,7 @@ require Exporter;
 @EXPORT = qw/$FORMAT $OUTPUT $TITLE $LIMIT/;
 
 our $FORMAT = 'RSS';
-our $OUTPUT = 'index.html';
+our $OUTPUT = 'output.html';
 our $TITLE = 'I am too lame to read documentation';
 our $LIMIT = 25;
 

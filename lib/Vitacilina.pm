@@ -78,21 +78,12 @@ L<http://log.damog.net/>.
 
 David Moreno &lt;david@axiombox.com&gt;.
 
-=head1 COPYRIGHT & LICENSE
+=head1 COPYRIGHT
 
- Copyright 2008-2009 David Moreno
- 
- Licensed under the Apache License, Version 2.0 (the "License");
- you may not use this file except in compliance with the License.
- You may obtain a copy of the License at
- 
-     http://www.apache.org/licenses/LICENSE-2.0
- 
- Unless required by applicable law or agreed to in writing, software
- distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- See the License for the specific language governing permissions and
- limitations under the License.
+Copyright (C) 2009 by David Moreno.
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
 
 =cut
 
@@ -100,6 +91,8 @@ package Vitacilina;
 
 use strict;
 use warnings;
+
+use 5.005;
 
 use URI;
 use Template;
@@ -178,6 +171,12 @@ sub render {
     RELATIVE => $self->tt_relative,
     ABSOLUTE => $self->tt_absolute,
   );
+
+	Carp::croak("No YAML config file was defined!")
+		unless $self->{config};
+
+	Carp::croak("No TT file was defined!")
+		unless $self->{template};
 
   $self->{feedsData} = $self->_feedsData;
 
