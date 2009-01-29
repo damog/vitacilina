@@ -7,9 +7,10 @@ Vitacilina - ¡Ah, qué buena medicina!
 =head1 DESCRIPTION
 
 A simple feeds engine exporter that uses YAML to get list of feeds and
-TT as templating system. Some people would call it an aggregator. At
-first, it was intended to be a reliable Planet (L<http://planetplanet.org>)
-alternative.
+TT as templating system. Some people would call it an aggregator. It was
+intended to be a reliable Planet (L<http://planetplanet.org>)
+alternative, then some development ideas evolved into rFeed (http://github.com/damog/rfeed).
+Vitacilina runs on production services on a couple of systems.
 
 =head1 SYNOPSIS
 
