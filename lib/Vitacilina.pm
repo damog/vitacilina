@@ -1,26 +1,100 @@
 #!/usr/bin/env perl
 
-# Copyright (c) 2008 - Axiombox - http://www.axiombox.com/
-#	David Moreno Garza <david@axiombox.com>
-# 
-# Permission is hereby granted, free of charge, to any person obtaining a copy
-# of this software and associated documentation files (the "Software"), to deal
-# in the Software without restriction, including without limitation the rights
-# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-# copies of the Software, and to permit persons to whom the Software is
-# furnished to do so, subject to the following conditions:
-#
-# The above copyright notice and this permission notice shall be included in
-# all copies or substantial portions of the Software.
-#
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-# THE SOFTWARE.
-#
+=head1 NAME
+
+Vitacilina - ¡Ah, qué buena medicina!
+
+=head1 DESCRIPTION
+
+A simple feeds engine exporter that uses YAML to get list of feeds and
+TT as templating system. Some people would call it an aggregator. At
+first, it was intended to be a reliable Planet (L<http://planetplanet.org>)
+alternative.
+
+=head1 SYNOPSIS
+
+ use Vitacilina;
+
+ my $v = Vitacilina->new(
+   config => 'config.yaml',
+	 template => 'template.tt',
+	 output => 'output.html',
+	 limit => '20',
+ );
+
+ $v->render;
+
+=head1 FILES
+
+=head2 config
+
+The C<config> parameter specifies the path to a YAML file specifying a list
+of feeds. The format to follow:
+
+ http://debian-news.net/backend.php:
+   name: Debian-News.net
+ http://www.osnews.com/files/recent.xml:
+   name: OSNews
+ http://www.linux.com/feature/c4201?theme=rss:
+   name: Linux.com
+ http://rss.gmane.org/gmane.linux.debian.user.news:
+   name: Debian News
+ http://www.debian.org/security/dsa:
+   name: Debian Security
+ http://www.debian-administration.org/headlines.rdf:
+   name: Debian Administration
+ http://www.debianhelp.org/rss.xml:
+   name: debianHELP
+ http://times.debian.net/?format=rss20.xml:
+   name: DebianTimes
+
+=head2 template
+
+A C<Template::Toolkit> file which will be taken as the template for
+output. Format:
+
+ [% FOREACH p IN data %]
+  <a href="[% p.permalink %]">[% p.title %]</a>
+   by <a href="[% p.channelUrl %]">[% p.author %]</a>
+  <br />
+ [% END %]
+
+=head2 output
+
+File path where the output will be written.
+
+=head1 EXAMPLES
+
+Take a look at the C<examples/> directory for fully working example.
+
+=head1 SEE ALSO
+
+Git repository is located at L<http://github.com/damog/vitacilina>.
+Also take a look at the Infinite Pig Theorem blog where similar
+developments from the author are announced and sampled,
+L<http://log.damog.net/>.
+
+=head1 AUTHOR
+
+David Moreno &lt;david@axiombox.com&gt;.
+
+=head1 COPYRIGHT & LICENSE
+
+ Copyright 2008-2009 David Moreno
+ 
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ 
+     http://www.apache.org/licenses/LICENSE-2.0
+ 
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+
+=cut
 
 package Vitacilina;
 

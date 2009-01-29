@@ -1,0 +1,82 @@
+NAME
+    Vitacilina - ¡Ah, qué buena medicina!
+
+DESCRIPTION
+    A simple feeds engine exporter that uses YAML to get list of feeds and
+    TT as templating system. Some people would call it an aggregator. At
+    first, it was intended to be a reliable Planet
+    (<http://planetplanet.org>) alternative.
+
+SYNOPSIS
+     use Vitacilina;
+
+     my $v = Vitacilina->new(
+       config => 'config.yaml',
+             template => 'template.tt',
+             output => 'output.html',
+             limit => '20',
+     );
+
+     $v->render;
+
+FILES
+  config
+    The "config" parameter specifies the path to a YAML file specifying a
+    list of feeds. The format to follow:
+
+     http://debian-news.net/backend.php:
+       name: Debian-News.net
+     http://www.osnews.com/files/recent.xml:
+       name: OSNews
+     http://www.linux.com/feature/c4201?theme=rss:
+       name: Linux.com
+     http://rss.gmane.org/gmane.linux.debian.user.news:
+       name: Debian News
+     http://www.debian.org/security/dsa:
+       name: Debian Security
+     http://www.debian-administration.org/headlines.rdf:
+       name: Debian Administration
+     http://www.debianhelp.org/rss.xml:
+       name: debianHELP
+     http://times.debian.net/?format=rss20.xml:
+       name: DebianTimes
+
+  template
+    A "Template::Toolkit" file which will be taken as the template for
+    output. Format:
+
+     [% FOREACH p IN data %]
+      <a href="[% p.permalink %]">[% p.title %]</a>
+       by <a href="[% p.channelUrl %]">[% p.author %]</a>
+      <br />
+     [% END %]
+
+  output
+    File path where the output will be written.
+
+EXAMPLES
+    Take a look at the "examples/" directory for fully working example.
+
+SEE ALSO
+    Git repository is located at <http://github.com/damog/vitacilina>. Also
+    take a look at the Infinite Pig Theorem blog where similar developments
+    from the author are announced and sampled, <http://log.damog.net/>.
+
+AUTHOR
+    David Moreno &lt;david@axiombox.com&gt;.
+
+COPYRIGHT & LICENSE
+     Copyright 2008-2009 David Moreno
+ 
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+ 
+         http://www.apache.org/licenses/LICENSE-2.0
+ 
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+
