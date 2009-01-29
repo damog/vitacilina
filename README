@@ -12,9 +12,9 @@ SYNOPSIS
 
      my $v = Vitacilina->new(
        config => 'config.yaml',
-             template => 'template.tt',
-             output => 'output.html',
-             limit => '20',
+       template => 'template.tt',
+       output => 'output.html',
+       limit => '20',
      );
 
      $v->render;
@@ -22,8 +22,10 @@ SYNOPSIS
 FILES
   config
     The "config" parameter specifies the path to a YAML file specifying a
-    list of feeds. The format to follow:
+    list of feeds. Use this format:
 
+     http://myserver.com/myfeed:
+       name: Some Cool Feed
      http://debian-news.net/backend.php:
        name: Debian-News.net
      http://www.osnews.com/files/recent.xml:
@@ -51,6 +53,9 @@ FILES
       <br />
      [% END %]
 
+    The "data" is an ordered array with a bunch of hashes with the simple
+    data such as "permalink", "title", "channelUrl", "author", etc.
+
   output
     File path where the output will be written.
 
@@ -63,7 +68,7 @@ SEE ALSO
     from the author are announced and sampled, <http://log.damog.net/>.
 
 AUTHOR
-    David Moreno &lt;david@axiombox.com&gt;.
+    David Moreno, david@axiombox.com.
 
 COPYRIGHT
     Copyright (C) 2009 by David Moreno.

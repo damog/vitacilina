@@ -17,9 +17,9 @@ alternative.
 
  my $v = Vitacilina->new(
    config => 'config.yaml',
-	 template => 'template.tt',
-	 output => 'output.html',
-	 limit => '20',
+   template => 'template.tt',
+   output => 'output.html',
+   limit => '20',
  );
 
  $v->render;
@@ -29,8 +29,10 @@ alternative.
 =head2 config
 
 The C<config> parameter specifies the path to a YAML file specifying a list
-of feeds. The format to follow:
+of feeds. Use this format:
 
+ http://myserver.com/myfeed:
+   name: Some Cool Feed
  http://debian-news.net/backend.php:
    name: Debian-News.net
  http://www.osnews.com/files/recent.xml:
@@ -59,6 +61,10 @@ output. Format:
   <br />
  [% END %]
 
+The C<data> is an ordered array with a bunch of hashes with the
+simple data such as C<permalink>, C<title>, C<channelUrl>, C<author>,
+etc.
+
 =head2 output
 
 File path where the output will be written.
@@ -76,7 +82,7 @@ L<http://log.damog.net/>.
 
 =head1 AUTHOR
 
-David Moreno &lt;david@axiombox.com&gt;.
+David Moreno, david@axiombox.com.
 
 =head1 COPYRIGHT
 
