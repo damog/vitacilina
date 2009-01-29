@@ -34,22 +34,9 @@ of feeds. Use this format:
 
  http://myserver.com/myfeed:
    name: Some Cool Feed
- http://debian-news.net/backend.php:
-   name: Debian-News.net
- http://www.osnews.com/files/recent.xml:
-   name: OSNews
- http://www.linux.com/feature/c4201?theme=rss:
-   name: Linux.com
- http://rss.gmane.org/gmane.linux.debian.user.news:
-   name: Debian News
- http://www.debian.org/security/dsa:
-   name: Debian Security
- http://www.debian-administration.org/headlines.rdf:
-   name: Debian Administration
- http://www.debianhelp.org/rss.xml:
-   name: debianHELP
- http://times.debian.net/?format=rss20.xml:
-   name: DebianTimes
+ http://feeds.feedburner.com/InfinitePigTheorem:
+   name: InfinitePigTheorem
+ ...
 
 =head2 template
 
