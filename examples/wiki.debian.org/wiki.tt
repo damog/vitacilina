@@ -1,4 +1,0 @@
-[% FOREACH p IN data %]
-	<a href="[% p.permalink %]">[% p.title %]</a> by <a href="[% p.channelUrl %]">[% p.author %]</a>
-	<br />
-[% END %]
