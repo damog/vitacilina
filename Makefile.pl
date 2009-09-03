@@ -12,6 +12,7 @@ requires 'YAML::Syck' => '0';
 requires 'Data::Dumper' => '0';
 requires 'LWP::UserAgent' => '0';
 requires 'DateTime' => '0';
+build_requires 'Test::More' => '0';
 
 no_index directory => 'examples';
 # license_from 'LICENSE';
