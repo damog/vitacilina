@@ -6,3 +6,4 @@ lib/Vitacilina/Config.pm
 lib/Vitacilina.pm
 Makefile.PL
 MANIFEST
+Changes

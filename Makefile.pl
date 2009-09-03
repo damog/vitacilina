@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 
-use inc::Module::Install;
+use inc::Module::Install 0.75;
 
 name 'Vitacilina';
 all_from 'lib/Vitacilina.pm';
@@ -15,5 +15,7 @@ requires 'DateTime' => '0';
 
 no_index directory => 'examples';
 # license_from 'LICENSE';
+
+repository 'http://github.com/damog/vitacilina/tree';
 
 WriteAll;
