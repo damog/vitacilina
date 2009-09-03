@@ -94,6 +94,9 @@ use Template;
 use XML::Feed;
 use YAML::Syck;
 use Data::Dumper;
+use LWP::UserAgent;
+use DateTime;
+
 use Carp;
 
 use Vitacilina::Config qw/$FORMAT $OUTPUT $TITLE $LIMIT/;
