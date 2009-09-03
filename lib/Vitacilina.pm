@@ -83,10 +83,11 @@ it under the same terms as Perl itself.
 
 package Vitacilina;
 
+use 5.006;
+
 use strict;
 use warnings;
 
-use 5.005;
 
 use URI;
 use Template;
