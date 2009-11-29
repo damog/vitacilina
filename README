@@ -53,11 +53,12 @@ EXAMPLES
 
 SEE ALSO
     Git repository is located at <http://github.com/damog/vitacilina>. Also
-    take a look at the Infinite Pig Theorem blog where similar developments
-    from the author are announced and sampled, <http://log.damog.net/>.
+    take a look at the Stereonaut! blog where similar developments from the
+    author are announced and sampled, <http://log.damog.net/>.
 
 AUTHOR
-    David Moreno, david@axiombox.com.
+    David Moreno, david@axiombox.com. Alexandr Ciornii contributed with
+    patches.
 
 COPYRIGHT
     Copyright (C) 2009 by David Moreno.

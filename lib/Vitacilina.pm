@@ -64,13 +64,14 @@ Take a look at the C<examples/> directory for fully working example.
 =head1 SEE ALSO
 
 Git repository is located at L<http://github.com/damog/vitacilina>.
-Also take a look at the Infinite Pig Theorem blog where similar
+Also take a look at the Stereonaut! blog where similar
 developments from the author are announced and sampled,
 L<http://log.damog.net/>.
 
 =head1 AUTHOR
 
-David Moreno, david@axiombox.com.
+David Moreno, david@axiombox.com. Alexandr Ciornii contributed with
+patches.
 
 =head1 COPYRIGHT
 
@@ -104,7 +105,7 @@ use Vitacilina::Config qw/$FORMAT $OUTPUT $TITLE $LIMIT/;
 # Constant: VERSION
 #
 # Vitacilina version
-our $VERSION = '0.1';
+our $VERSION = '0.2';
 
 my $params = {
 	required => [qw{config template}],
