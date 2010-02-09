@@ -333,7 +333,7 @@ sub _data {
 	@entries = sort {
 		($b->{date} || $b->{date_modified} || $zero)
 		<=>
-		($a->{date} || $b->{date_modified} || $zero)
+		($a->{date} || $a->{date_modified} || $zero)
 	} @entries;
 	
 	delete @entries[$self->limit .. $#entries];
