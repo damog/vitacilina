@@ -17,6 +17,6 @@ build_requires 'Test::More' => '0';
 no_index directory => 'examples';
 # license_from 'LICENSE';
 
-repository 'http://github.com/damog/vitacilina/tree';
+repository 'http://github.com/damog/vitacilina';
 
 WriteAll;
