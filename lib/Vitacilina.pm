@@ -1,5 +1,7 @@
 #!/usr/bin/env perl
 
+=encoding utf8
+
 =head1 NAME
 
 Vitacilina - ¡Ah, qué buena medicina!
